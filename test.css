@@ -1,25 +1,41 @@
 body, html {
     margin: 0px;
+    font-size: 10px;
 }
 body {
-    overflow: auto;
+    /* overflow: auto; */
     background-color: white;
+}
+
+.container-fluid{
+    width: 100vw;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 #column-one{
     background-color: rgb(33,33,33);
     color:white;
+    width: 100%;
+    padding: 1rem; 
 }
 #column-two{
     background-color: lightgrey;
+    width: 100%;
+    padding: 1rem; 
 }
 #column-three{
     background-color: white;
+    width: 100%;
+    padding: 1rem; 
 }
 .btn {
     background-color: orange;
-    width: 100%;
-    min-width: 100%;
+    width: 50%;
 }
 .header {
     display:flex;
@@ -28,10 +44,13 @@ body {
 }
 .column {
     height: 100vh;
+    width: 33 vw;
 }
 .box {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
 }
 .card {
     padding-top: 10px;
@@ -47,6 +66,12 @@ body {
 .formatting {
     font-size: 10px;
 }
+
+a:hover{
+    cursor: pointer;
+    color: blueviolet; 
+}
+
 #first-image {
     height: 30px;
     width: 30px;
@@ -63,3 +88,36 @@ nav {
 .column {
     padding-top: 20px;
 }
+
+textarea{
+    width: 90%;
+    margin: 1rem; 
+}
+
+input{
+    width: 100%;
+}
+
+/* x-small */
+@media ( max-width: 575px ){
+    .btn{
+        background-color: hotpink;
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* small  */
+/* @media ( min-width: 576px ){
+    .btn{
+        background-color: aqua;
+    }
+} */
+
+/* medium */
+/* @media( min-width: 768px ){
+    .btn{
+        background-color: red;
+    }
+}  */
